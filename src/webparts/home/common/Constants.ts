@@ -1,0 +1,104 @@
+export const SiteUrl = "";
+export const OrgSearchBoxPlaceHolder = "Search Organization by name";
+export const CompletedKey = "completed";
+export const CompletedText = "Completed";
+export const InProgressKey = "inprogress";
+export const InProgressText = "In Progress";
+export const NotStartedKey = "notstarted";
+export const NotStartedText = "Not Started";
+export const AllText = "All";
+export const SiteAppName = 'Partner Voice Site Survey';
+export const NewOrganizationAssessment = 'New Organization Assessment';
+export const OrganizationOverview = 'Organization Overview';
+export const AssessmentOverview = 'Assessment Overview';
+export const SiteSearchBoxPlaceHolder = "Search Site by name";
+export const AssessmentSearchBoxHolder = "Search Assessment by name";
+export const GridHeaders = [
+    "STATUS",
+    "% COMPLETION",
+    "EXPORT"
+];
+export const SelectStatus = 'Select Status';
+export const SelectDeployedRegion = 'Select Deployed Region';
+export const Status = 'Status';
+export const OrganizationName = 'Organization Name';
+export const EnterOrganizationName = 'Enter Organization Name (Max 50 characters)';
+export const TenantName = 'Tenant Name';
+export const EnterTenantName = 'Enter Tenant Name (Max 50 characters)';
+export const TenantId = 'Tenant Id';
+export const EnterTenantId = 'Enter Tenant Id (Max 50 characters)';
+export const DeployedRegion = 'Deployed Region';
+export const Save = 'Save';
+export const Submit = 'Submit';
+export const Back = 'Back';
+export const AllowedCharacters = "Allowed special characters are ., -, _, @, &";
+export const OrganizationCreatedSuccessfully = "New Organization Assessment created successfully.";
+export const SiteDataUpdatedSuccessfully = "New site created successfully.";
+export const SomethingWentWrong = "Something Went Wrong!";
+export const SiteOverview = 'Site Overview';
+export const NewSiteAssessment = 'New Site Assessment';
+export const SiteName = 'Site Name';
+export const AssessmentName = 'Assessment Name';
+export const Subject = 'Subject';
+export const Answer = 'Answer';
+export const EnterSiteName = 'Enter Site Name (Max 50 characters)';
+export const Organization = 'Organization';
+export const Site = 'Site';
+export const Tenant = 'Tenant';
+export const MasterList = 'Master List';
+export const AppConfiguration = 'App Configuration';
+export const ProvisioningErrorMessage = 'An issue has occured during the app setup. Please try setting up the app again.';
+export const ProvisioningButton = 'Setup PVSS App';
+export const ProvisioningSuccessMessage = 'App Setup has been completed successfully. Please refresh the App.';
+export const SpinnerMessage = "Setting up the App.....";
+export const ProvisioningSetupMessage = "This process will take a few minutes, do not navigate away until you see the completed success message.";
+export const NotAllowedSpecialChar = /[`!#$%^*()+\=\[\]{};':"\\|,<>\/?~]/;
+export const ErrorMessageSpecialChar = "Only ., -, _, @, & special characters are allowed";
+export const ProvisioningLog = "PVSS Provisioning Log: ";
+export const ProvisioningExceptionLog = "PVSS_ProvisioningHelper_";
+export const AssessmentsWithoutDefaultColumn = "Site Services,Conference Rooms,Kiosks,Hot Desks,Reception,Emergency Services";
+export const AssessmentsWithNoCalculation = "Analog Devices,User Information";
+export const AlreadyExists = "AlreadyExists";
+export const InfoContentWithoutAnswerColumn = "% Completion is calculated based on the number of records updated in 1st column (ex: Kiosk1, Desk1 etc.)";
+export const InfoContentWithAnswerColumn = "% Completion is calculated based on the number of records updated in answer column";
+export const InfoContentWithNoCalculation = "% Completion is not calculated for this assessment";
+export const MessageNewSiteCreationSuccess = "New site created successfully!!";
+export const MessageNewAssessmentsCreationSuccess = "New site and assessments are created successfully.";
+export const ErrorRequiredSiteError = "Please enter the Site Name";
+export const ErrorSiteAlreadyExits = "The Site Name already exists";
+export const ErrorRequiredOrganizationError = "Please enter the Organization Name";
+export const ErrorOrganizationAlreadyExits = "The Organization Name already exists";
+export const ErrorRequiredTenantNameError = "Please enter the Tenant Name";
+export const ErrorRequiredTenantIdError = "Please enter the Tenant Id";
+export const ErrorRequiredDeployedRegionError = "Please select the Deployed Region";
+export const ErrorRequiredStatusError = "Please select the Status";
+export const AssessmentsMaster = 'Assessments Master';
+export const InfoIconText = 'InfoIconText';
+export const AssessmentColumn = 'AssessmentColumn';
+export const UserInformationList = "User Information";
+export const AnalogDevicesList = "Analog Devices";
+export const Close = 'Close';
+export const AssessmentLoaderMessage = "Creating assessments for the site";
+export const MessageNewSiteCreationFailure = "Something went wrong while creating the site.";
+export const MessageNewAssessmentsCreationFailure = "Something went wrong while creating the assessments.";
+export const RefreshDataList = "Refresh Data List";
+export const RefreshSpinnerMessage = "Please wait for the refresh to complete, this process may take a while.";
+export const LoadingSpinnerMessage = "Loading....";
+export const ReportsLibrary = "Reports";
+export const SiteReportTitle = "Site Report";
+export const OrgReportTitle = "Organization Report";
+export const ExportIconTooltip = "Generate reports related to the voice site survey. Reports are kept in organization folders on SharePoint. Please ensure no current report is open before export. Individual assessment reports are exported locally.";
+export const ExportReportMessage = "Please note that larger reports may take a few minutes to be generated.";
+export const ExportErrorMessage = "An issue occurred during the Export operation. Possible reason could be another user having the same report open. Please check and try again.";
+export const SiteExportSpinnerMessage = "Creating site report";
+//App Header URLs
+export const M365ChampionCommunity = "https://aka.ms/m365champions";
+export const DrivingAdoptionM365 = "https://aka.ms/drivingadoption";
+export const M365AdoptionHub = "https://aka.ms/teamsapptemplates";
+export const M365GitHub = "https://aka.ms/pvssapp";
+export const SupportUrl = "https://github.com/OfficeDev/microsoft-teams-partner-voice-site-survey/issues";
+export const FeedBackUrl = "https://aka.ms/pvssappfeedback";
+
+
+
+

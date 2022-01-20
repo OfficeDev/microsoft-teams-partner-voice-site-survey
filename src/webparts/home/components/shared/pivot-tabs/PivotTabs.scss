@@ -1,0 +1,40 @@
+.tab-header {
+    display: table;
+    margin: 0 auto;
+    letter-spacing: 0px;
+    color: #242424;
+    opacity: 1;
+    text-align: center;
+
+    .sm-text {
+        font: normal normal normal 14px/19px Segoe UI;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    .lg-text {
+        font: normal normal bold 24px/32px Segoe UI;
+        margin-left: 5px;
+        vertical-align: middle;
+
+    }
+
+}
+
+.ms-Pivot-link {
+    height: 60px;
+    font-size: 20px;
+    padding: 0%;
+    margin-right: .16%;
+    width: 24.88%;
+}
+
+.pagination-grid {
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-status-icon {
+    padding: 5px;
+}

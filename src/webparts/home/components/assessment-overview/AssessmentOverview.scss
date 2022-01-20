@@ -1,0 +1,66 @@
+table.assessment-table {
+    align-content: center;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    width: 98% !important;
+    margin-left: 0.5%;
+    opacity: 1;
+
+    tbody td {
+        text-align: left;
+        height: 48px;
+        color: #666666;
+        letter-spacing: 0px;
+        font: normal normal normal 16px/21px Segoe UI;
+        padding-left: 10px;
+    }
+
+    .assessment-searchbox {
+        width: 100%;
+    }
+
+    .assessment-cursor {
+        padding-top: 7% !important;
+    }
+}
+
+.assessment-key-label {
+    font-size: 17px;
+    line-height: 22px;
+    color: #666;
+    padding-right: 0.5em;
+    font: normal normal 700 20px/32px Segoe UI;
+    font-weight: bolder;
+}
+
+.assessment-value-label {
+    font-size: 15px;
+    line-height: 20px;
+    color: #666;
+    font: normal normal normal 18px/32px Segoe UI;
+}
+
+.loader {
+    border-radius: 50%;
+    border: 6px solid #dde2eb;
+    border-top: 6px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s infinite;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

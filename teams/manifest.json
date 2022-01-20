@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "packageName": "PVSSHomeWebPart",
+  "id": "b4515053-f529-483f-b4f0-c5cc1397b2c8",
+  "version": "1.0.0.0",
+  "developer": {
+    "name": "Teams Customer Advocacy Group",
+    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement",
+    "mpnId": "CA01101011"
+  },
+  "name": {
+    "short": "Partner Voice Site Survey Tool"
+  },
+  "description": {
+    "short": "Partner Voice Site Survey Tool",
+    "full":  "App Template to help facilitate the voice site survey process when conducting and gathering data related to the Teams voice survey experience. This app template leverages (SPFx / SPO / Lists) to showcase both modern environments and their ability to be leveraged as one within a Teams App experience."
+  },
+  "icons": {
+    "outline": "b4515053-f529-483f-b4f0-c5cc1397b2c8_outline.png",
+    "color": "b4515053-f529-483f-b4f0-c5cc1397b2c8_color.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=b4515053-f529-483f-b4f0-c5cc1397b2c8%26forceLocale={locale}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "Partner Voice Site Survey Tool",
+      "name": "Partner Voice Site Survey Tool",
+      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=b4515053-f529-483f-b4f0-c5cc1397b2c8%26forceLocale={locale}",
+      "scopes": [ "personal" ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}

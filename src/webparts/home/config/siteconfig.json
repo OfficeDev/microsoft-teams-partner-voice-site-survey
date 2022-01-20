@@ -1,0 +1,20 @@
+{
+  "inclusionPath": "sites",
+  "sitename": "PVSS",
+  "lists": [{
+    "listName": "Organization",
+    "columns": [{
+        "name": "Organization Name",
+        "type": "text"
+      },
+      {
+        "name": "Status",
+        "type": "text"
+      },
+      {
+        "name": "Completion Progress",
+        "type": "text"
+      }
+    ]
+  }]
+}

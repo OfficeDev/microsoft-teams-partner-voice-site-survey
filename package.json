@@ -1,0 +1,46 @@
+{
+  "name": "partner-voice-site-survey",
+  "version": "0.0.1",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "gulp bundle",
+    "clean": "gulp clean",
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.35.2",
+    "@microsoft/sp-core-library": "1.12.1",
+    "@microsoft/sp-lodash-subset": "1.12.1",
+    "@microsoft/sp-office-ui-fabric-core": "1.12.1",
+    "@microsoft/sp-property-pane": "1.12.1",
+    "@microsoft/sp-webpart-base": "1.12.1",
+    "@pnp/sp": "^2.8.0",
+    "bootstrap": "^5.1.1",
+    "office-ui-fabric-react": "7.156.0",
+    "react": "16.9.0",
+    "react-bootstrap": "^1.6.3",
+    "react-csv": "^2.0.3",
+    "react-dom": "16.9.0",
+    "react-reactstrap-pagination": "^2.0.3",
+    "react-router-dom": "^5.3.0",
+    "reactstrap": "^8.10.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "xlsx": "^0.17.4"
+  },
+  "devDependencies": {
+    "@microsoft/rush-stack-compiler-3.8": "^0.4.47",
+    "@microsoft/sp-build-web": "1.12.1",
+    "@microsoft/sp-module-interfaces": "1.12.1",
+    "@microsoft/sp-tslint-rules": "1.12.1",
+    "@microsoft/sp-webpart-workbench": "1.12.1",
+    "@types/react": "16.9.36",
+    "@types/react-dom": "16.9.8",
+    "@types/webpack-env": "1.13.1",
+    "ajv": "~5.2.2",
+    "gulp": "~4.0.2",
+    "tslint": "^6.1.3",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "typescript": "^4.4.3"
+  }
+}

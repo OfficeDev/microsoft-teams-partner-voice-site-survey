@@ -1,0 +1,119 @@
+.navbg {
+    background-color: #243a5e;
+    height: 75px;
+
+    .bgDecorator {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+
+        .headerPosition {
+            display: inline-flex;
+            margin-left: 40px;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .appHeaderLabel {
+            font: normal normal 700 20px/27px Segoe UI;
+            color: #fff;
+            cursor: pointer;
+            padding-top: 5px;
+        }
+    }
+
+    .navItem {
+        margin-left: auto;
+        margin-right: 3%;
+        display: inline-flex;
+
+        .padding {
+            padding-right: 20px;
+        }
+
+        .fbIcon {
+            line-height: 25px;
+        }
+    }
+
+}
+
+.pageHeader {
+    background-color: white;
+    height: 90px;
+
+    .black {
+        color: #242424;
+        text-decoration: none;
+        width: 100%;
+
+        .leftBannner {
+            display: inline-flex;
+            margin-left: 32px;
+            margin-top: 10px;
+            width: 100%;
+
+        }
+
+        .backBtn {
+            padding-right: 2%;
+            padding-top: 17px;
+        }
+
+        .bannerImage {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: #243A5E 0% 0% no-repeat padding-box;
+        }
+
+        .bannerIcon {
+            padding: 15px;
+        }
+
+        .bannerLabel {
+            padding-top: 17px;
+            margin-left: 20px;
+            font: normal normal 700 24px/32px Segoe UI;
+        }
+
+        .pageHeaderButton {
+            float: right;
+            display: inline-flex;
+            margin: 29px;
+            cursor: pointer;
+
+            .pageHeaderButtonLabel {
+                font: normal normal normal 16px/21px Segoe UI;
+                letter-spacing: 0px;
+                color: #242424;
+                margin-top: 7px;
+                margin-right: 15px;
+                text-align: right;
+
+            }
+
+            .pageHeaderButtonIcon {
+                height: 32px;
+                width: 32px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .ms-sm6 .bannerLabel {
+        padding-top: 0px !important;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .pageHeaderButton {
+        margin: 15px !important;
+    }
+
+    .pageHeaderButtonLabel {
+        margin-top: 7px !important;
+    }
+}
