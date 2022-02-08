@@ -493,7 +493,7 @@ export default class ProvisioningHelper {
             const parser = new DOMParser();
             const xml = parser.parseFromString(fieldsToCreate[i], 'text/xml');
             let fieldDisplayName = xml.querySelector('Field').getAttribute('DisplayName');
-            let listView = await listContext.views.getByTitle("All Items").fields.add(fieldDisplayName);
+            let listView = await listContext.defaultView.fields.add(fieldDisplayName);
             addingStatus.push(listView);
           }
           Promise.all(addingStatus).then(() => {
