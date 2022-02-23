@@ -1,0 +1,1463 @@
+{
+  "inclusionPath": "sites",
+  "sitename": "PVSS",
+  "Lists": [
+    {
+      "listName": "App Configuration",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Provisioning' StaticName='Provisioning' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Provisioning' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='AppVersion' StaticName='AppVersion' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='AppVersion' Viewable='TRUE' />"
+      ],
+      "renameColumns": [],
+      "masterData": [
+        {
+          "Title": "AppConfiguration",
+          "Provisioning": "false",
+          "AppVersion": "1.0.0.0"
+        }
+      ]
+    },
+    {
+      "listName": "Refresh Data List",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='DateTime' DisplayName='LastUpdatedTime' StaticName='LastUpdatedTime' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' Name='LastUpdatedTime' Viewable='TRUE' />"
+      ],
+      "renameColumns": [],
+      "masterData": [
+        {
+          "Title": "Last Refreshed Time"          
+        }
+      ]
+    },
+    {
+      "listName": "Reports",
+      "listTemplate": "101",
+      "fields": [],
+      "renameColumns": []
+    },
+    {
+      "listName": "Assessments Master",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='AssessmentColumn' StaticName='AssessmentColumn' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='AssessmentColumn' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='InfoIconText' StaticName='InfoIconText' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='InfoIconText' Viewable='TRUE' />"
+      ],
+      "renameColumns": [],
+      "masterData": [
+        {
+          "Title": "Analog Devices",
+          "AssessmentColumn": "",
+          "InfoIconText": "% Completion is not calculated for this assessment"
+        },
+        {
+          "Title": "Conference Rooms",
+          "AssessmentColumn": "Room_x0020_1",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Room 1 column"
+        },
+        {
+          "Title": "Emergency Services",
+          "AssessmentColumn": "Answer",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Answer column"
+        },
+        {
+          "Title": "Hot Desks",
+          "AssessmentColumn": "Desk_x0020_1",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Desk 1 column"
+        },
+        {
+          "Title": "Hunt Groups",
+          "AssessmentColumn": "Hunt_x0020_Group_x0020_1",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Hunt Group 1 column"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "AssessmentColumn": "Answer",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Answer column"
+        },
+        {
+          "Title": "Kiosks",
+          "AssessmentColumn": "Kiosk_x0020_1",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Kiosk 1 column"
+        },
+        {
+          "Title": "Network",
+          "AssessmentColumn": "Answer",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Answer column"
+        },
+        {
+          "Title": "Reception",
+          "AssessmentColumn": "Receptionist_x0020_1",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Receptionist 1 column"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "AssessmentColumn": "Answer",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Answer column"
+        },
+        {
+          "Title": "Site Services",
+          "AssessmentColumn": "Site_x0020_Code_x0020_1",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Site Code 1 column"
+        },
+        {
+          "Title": "Telephony",
+          "AssessmentColumn": "Answer",
+          "InfoIconText": "% Completion is calculated based on the number of records updated in Answer column"
+        },
+        {
+          "Title": "User Information",
+          "AssessmentColumn": "",
+          "InfoIconText": "% Completion is not calculated for this assessment"
+        }
+      ]
+    },
+    {
+      "listName": "Analog Devices",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' StaticName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Description' StaticName='Description' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Description' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Building'  StaticName='Building'  Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Building' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Floor' StaticName='Floor' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Floor' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Location' StaticName='Location' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Location' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Current Gateway/ PBX' StaticName='Current_x0020_Gateway_x002f__x00' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Current_x0020_Gateway_x002f__x00' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Current Port' StaticName='Current_x0020_Port'  Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Current_x0020_Port' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='DID' StaticName='DID' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='DID' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Assessment Overview",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' MaxLength='255' Name='Site' Indexed='TRUE' StaticName='Site'    Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='AssessmentName' Required='FALSE' EnforceUniqueValues='FALSE'  MaxLength='255' Indexed='FALSE' Name='AssessmentName' StaticName='AssessmentName' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Status' Required='FALSE' EnforceUniqueValues='FALSE' MaxLength='255' Indexed='FALSE'  Name='Status' StaticName='Status' Viewable='TRUE' />",
+        "<Field Type='Number' DisplayName='CompletionProgress' Required='FALSE' Indexed='FALSE'  EnforceUniqueValues='FALSE' Name='CompletionProgress' StaticName='CompletionProgress' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Conference Rooms",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 1' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_1' StaticName='Room_x0020_1'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 2' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_2' StaticName='Room_x0020_2'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 3' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_3' StaticName='Room_x0020_3'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 4' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_4'  StaticName='Room_x0020_4'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 5' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_5' StaticName='Room_x0020_5'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 6' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_6' StaticName='Room_x0020_6'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 7' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_7' StaticName='Room_x0020_7'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 8' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_8' StaticName='Room_x0020_8'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 9' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_9'  StaticName='Room_x0020_9' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Room 10' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Room_x0020_10' StaticName='Room_x0020_10'  Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Emergency Services",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' StaticName='Site' Name='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' StaticName='Subject' Name='Subject' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Answer' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' StaticName='Answer' Name='Answer' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Hot Desks",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 1' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_1' StaticName='Desk_x0020_1'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 2' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_2' StaticName='Desk_x0020_2'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 3' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_3' StaticName='Desk_x0020_3'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 4' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_4' StaticName='Desk_x0020_4'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 5' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_5'  StaticName='Desk_x0020_5'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 6' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_6' StaticName='Desk_x0020_6'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 7' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_7' StaticName='Desk_x0020_7'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 8' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_8' StaticName='Desk_x0020_8'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 9' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_9'  StaticName='Desk_x0020_9'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk 10' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_10' StaticName='Desk_x0020_10'  Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Hunt Groups",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 1' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_1' StaticName='Hunt_x0020_Group_x0020_1'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 2' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_2' StaticName='Hunt_x0020_Group_x0020_2'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 3' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_3' StaticName='Hunt_x0020_Group_x0020_3'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 4' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_4' StaticName='Hunt_x0020_Group_x0020_4'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 5' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_5' StaticName='Hunt_x0020_Group_x0020_5'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 6' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_6'  StaticName='Hunt_x0020_Group_x0020_6'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 7' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_7' StaticName='Hunt_x0020_Group_x0020_7'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 8' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_8' StaticName='Hunt_x0020_Group_x0020_8'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 9' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_9' StaticName='Hunt_x0020_Group_x0020_9'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt Group 10' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x0020_Group_x0020_10' StaticName='Hunt_x0020_Group_x0020_10'  Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Infrastructure Environment",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' SiteName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Answer' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Answer' StaticName='Answer'  Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Kiosks",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 1' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_1' StaticName='Kiosk_x0020_1'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 2' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_2' StaticName='Kiosk_x0020_2' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 3' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_3' StaticName='Kiosk_x0020_3' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 4' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_4' StaticName='Kiosk_x0020_4' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 5' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_5' StaticName='Kiosk_x0020_5' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 6' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_6' StaticName='Kiosk_x0020_6' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 7' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_7' StaticName='Kiosk_x0020_7' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 8' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_8' StaticName='Kiosk_x0020_8' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 9' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_9' StaticName='Kiosk_x0020_9' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 10' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_10' StaticName='Kiosk_x0020_10' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Kiosk 11' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Kiosk_x0020_11' StaticName='Kiosk_x0020_11' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Master List",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Area' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Area' StaticName='Area' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Category"
+        }
+      ],
+      "masterData": [
+        {
+          "Title": "Analog Devices",
+          "Area": "",
+          "Subject": ""
+        },
+        {
+          "Title": "Conference Rooms",
+          "Area": "",
+          "Subject": "Capacity of room"
+        },
+        {
+          "Title": "Conference Rooms",
+          "Area": "",
+          "Subject": "Is there ethernet cabling in the room?"
+        },
+        {
+          "Title": "Conference Rooms",
+          "Area": "",
+          "Subject": "Is physical access to the room restricted?"
+        },
+        {
+          "Title": "Emergency Services",
+          "Area": "",
+          "Subject": "Are there any areas that have telephone lines or PBX extensions dedicated to automated monitoring %26 alarm systems? If so, please list."
+        },
+        {
+          "Title": "Emergency Services",
+          "Area": "",
+          "Subject": "Are there any areas that restrict the selection of telephony systems? If so, please list."
+        },
+        {
+          "Title": "Emergency Services",
+          "Area": "",
+          "Subject": "Is there an emergency/ crisis room?"
+        },
+        {
+          "Title": "Emergency Services",
+          "Area": "",
+          "Subject": "Floor Location"
+        },
+        {
+          "Title": "Emergency Services",
+          "Area": "",
+          "Subject": "Building Location"
+        },
+        {
+          "Title": "Emergency Services",
+          "Area": "",
+          "Subject": "Current telecom device"
+        },
+        {
+          "Title": "Emergency Services",
+          "Area": "",
+          "Subject": "Is the connection analogue or digital?"
+        },
+        {
+          "Title": "Emergency Services",
+          "Area": "",
+          "Subject": "If the connection is analogue is the line POTS or reliant on the PBX?"
+        },
+        {
+          "Title": "Hot Desks",
+          "Area": "",
+          "Subject": "Desk Number"
+        },
+        {
+          "Title": "Hot Desks",
+          "Area": "",
+          "Subject": "Floor Location"
+        },
+        {
+          "Title": "Hot Desks",
+          "Area": "",
+          "Subject": "Building Location"
+        },
+        {
+          "Title": "Hot Desks",
+          "Area": "",
+          "Subject": "Current Device(s) Model(s)"
+        },
+        {
+          "Title": "Hot Desks",
+          "Area": "",
+          "Subject": "Description"
+        },
+        {
+          "Title": "Hot Desks",
+          "Area": "",
+          "Subject": "Is there ethernet cabling at the hot desk?"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Name"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "DID Number"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "0800 Number (if applicable)"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Owner"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Members"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Do users have the ability to sign-out?"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Do callers receive a welcome message?"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "How often is the welcome message updated? (If applicable)"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "How are calls routed? E.g. Are all users called at once or simultaneously?"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Are there Opening hours associated to the group?"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "What are the Opening Hours of the group? (If applicable)"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Are there any periods of the year where the group is closed?"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Is voicemail is used?"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "Do calls revert to voicemail if unanswered? (If applicable)"
+        },
+        {
+          "Title": "Hunt Groups",
+          "Area": "",
+          "Subject": "How long does the call ring before sending the caller to voicemail? E.g. 20 seconds (If applicable)"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "The location of server/network utility room"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Building"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Floor"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Does this server room host any inbound Digital Circuits/PRI/SIP?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Does this server room host any other communications equipment? (if so, please list)"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Indicate the rack type(s)? i.e. comms, server"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "How many 'U' is the rack?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Please indicate your available rack space (in 'U') that can be accessed without reorganizing the equipment in the rack"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Please list the available space groupings in 'U' - e.g. 3, 5, 2"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Are there any known issues for this rack?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "How many power sockets are available in this rack?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Indicate the power type (AC or DC) provided to this rack"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "What power phase(s) is(are) provided to this rack?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Is this rack on a UPS?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "How much power (KW) is left to use in this rack?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Indicate the physical power point presentation e.g. IEC type"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Are there any other power restrictions?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Are there are any cooling restraints?"
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Are there any LAN restrictions? The Voice Gateway may require up to 3 network ports per device. Large sites may require multiple devices."
+        },
+        {
+          "Title": "Infrastructure Environment",
+          "Area": "",
+          "Subject": "Are there any cabling restrictions that might limit the ability to connect analogue devices to a centrally located voice gateway - e.g. fax lines separated via fiber?"
+        },
+        {
+          "Title": "Kiosks",
+          "Area": "",
+          "Subject": "Description of unit and functionality"
+        },
+        {
+          "Title": "Kiosks",
+          "Area": "",
+          "Subject": "Room Number/ Name"
+        },
+        {
+          "Title": "Kiosks",
+          "Area": "",
+          "Subject": "Floor Location"
+        },
+        {
+          "Title": "Kiosks",
+          "Area": "",
+          "Subject": "Building Location"
+        },
+        {
+          "Title": "Kiosks",
+          "Area": "",
+          "Subject": "Current Device(s) Model(s)"
+        },
+        {
+          "Title": "Kiosks",
+          "Area": "",
+          "Subject": "Is there ethernet cabling at the kiosk area?"
+        },
+        {
+          "Title": "Network",
+          "Area": "Business",
+          "Subject": "Network Services Manager"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "WAN Link Name (if applicable)"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Primary WAN Link speed (Mbps)"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Primary WAN Link Average Utilization (Mbps) (During Business hours, minimum 1 month)"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Primary WAN Link Peak Utilization (Mbps) (During Business hours, minimum 1 month)"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Primary WAN Link Average Latency to DC (ms) (During Business hours, minimum 1 month)"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Primary WAN Link SLA"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Is there a Secondary WAN Link available?"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Secondary WAN Link speed (Mbps)"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Has GQoS been performed already"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "Are the QoS settings that are applied GQoS settings?"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "List existing QoS settings for WAN Connection including site specific implementation details where applicable"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "What is the EF Queue Limit?"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "What is the AF41 Queue Limit?"
+        },
+        {
+          "Title": "Network",
+          "Area": "WAN",
+          "Subject": "What is the CS3 Queue Limit?"
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "LAN Speed (Mbps)"
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "Do all the LAN switches support PoE?"
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "Please list the switches that do not support PoE and the area they cover (expand as necessary of attached extract)."
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "Is resilient LAN networking available?"
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "Provide LAN Subnet Ranges (expand as necessary of attached extract)"
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "Provide the <CUSTOMER>1 Wireless Subnet Details Only (expand as necessary of attached extract)"
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "Are there any sites dependent on this network?"
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "If there are site dependencies please provide details"
+        },
+        {
+          "Title": "Network",
+          "Area": "LAN",
+          "Subject": "Provide the Subnet Ranges that apply to dependent sites (expand as necessary of attached extract)"
+        },
+        {
+          "Title": "Network",
+          "Area": "VPN",
+          "Subject": "Do you have any client VPN services terminating on site?"
+        },
+        {
+          "Title": "Network",
+          "Area": "VPN",
+          "Subject": "What are the utilization levels associated with the VPN?"
+        },
+        {
+          "Title": "Network",
+          "Area": "DHCP",
+          "Subject": "Do you have any local DHCP services?"
+        },
+        {
+          "Title": "Network",
+          "Area": "DHCP",
+          "Subject": "What are the utilization levels associated with the VPN?"
+        },
+        {
+          "Title": "Network",
+          "Area": "Other",
+          "Subject": "Please include a topology drawing"
+        },
+        {
+          "Title": "Network",
+          "Area": "Other",
+          "Subject": "Do you have any local firewalls between the client subnets and the datacenter?"
+        },
+        {
+          "Title": "Network",
+          "Area": "Other",
+          "Subject": "If Yes to local firewalls, who owns the change control for this? Please provide contact details for the team/person responsible"
+        },
+        {
+          "Title": "Network",
+          "Area": "Other",
+          "Subject": "Do you have any local infrastructure which would require awareness of traffic entering and exiting your site (e.g. WAN Accelerators)?"
+        },
+        {
+          "Title": "Network",
+          "Area": "Other",
+          "Subject": "Provide IP Control information for the site"
+        },
+        {
+          "Title": "Network",
+          "Area": "Other",
+          "Subject": "Any other concerns?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Is the reception managed by <CUSTOMER>?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Building Name"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Floor"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Floor Area (If applicable)"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Make %26 Model of Phone"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Current Headset / Soft Client"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Number of dedicated PCs used for reception?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Make %26 Model of Desktop PC"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Core Reception Hours"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Is the reception desk also a security desk?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Inbound DID's for Reception User"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Primary extension"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Other extension"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Number of lines"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "How many network points are available at the reception desk?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Do any other teams manage reception calls?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Does the receptionist(s) logon to the reception machine(s) with a generic username or their own <CUSTOMER>account?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "If applicable what is the name of the generic account?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Does the receptionist(s) logon to the reception machine(s) with their own personal NTID?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "If applicable what is the name of the personal account?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Does the receptionist use voicemail?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Is the receptionist a member of a hunt group?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Describe your handover behavior to cover staff for Holiday/Lunchtime behavior."
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Does the receptionist manage concurrent calls?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "What happens to incoming calls outside of core hours?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Do you use an Auto Attendant?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Is the receptionist a members of an ACD?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Do incoming calls enter a queue?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "If calls do enter a queue, how long until the call is routed to voicemail?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Does Reception currently have call waiting music?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Do you create a reception schedule each week and assign your call groups and ACD queues to staff?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Does the receptionist use a standard PBX phone to manage multiple calls without the use of a specific reception console on the reception desktop computer?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "If 'No' please provide details of system in use"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "Is there a Door Enry Phone System?"
+        },
+        {
+          "Title": "Reception",
+          "Area": "",
+          "Subject": "If 'Yes' please provide Make %26 Model and the list of phones that receive entry requests."
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Site Name"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Site Address"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Site Code"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "AD Site Name"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Segment"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Primary SPU"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Function"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Number of Users"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Expected user growth over next 3 years"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Total number of Conference rooms"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Number of Conference rooms with audio conferencing"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Number of Conference rooms with video conferencing"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Number of Conferences rooms with telepresence"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Number of Emergency response rooms"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Please specify any black-out and change freeze periods for the site"
+        },
+        {
+          "Title": "Site Overview Assessment",
+          "Area": "",
+          "Subject": "Secure storage area (for headsets, phones and network Infrastructure)"
+        },
+        {
+          "Title": "Site Services",
+          "Area": "",
+          "Subject": "Name (e.g. Helpdesk, Security, Reception, Switchboard)"
+        },
+        {
+          "Title": "Site Services",
+          "Area": "",
+          "Subject": "Existing GAL Entry"
+        },
+        {
+          "Title": "Site Services",
+          "Area": "",
+          "Subject": "Existing Short Code"
+        },
+        {
+          "Title": "Site Services",
+          "Area": "",
+          "Subject": "Existing DID (Long Code)"
+        },
+        {
+          "Title": "Site Services",
+          "Area": "",
+          "Subject": "Is Voicemail Required?"
+        },
+        {
+          "Title": "Site Services",
+          "Area": "",
+          "Subject": "Existing phone device"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Compliance",
+          "Subject": "Number of Users with a call recording requirement at site"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Compliance",
+          "Subject": "Number of Contact Center Users at site"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Compliance",
+          "Subject": "Number of Contact Center Users per building"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Compliance",
+          "Subject": "Are there any legal restrictions for VOIP Services at this site?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Compliance",
+          "Subject": "Number of Emergency phones (dedicated analog/ POTS) on site"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Compliance",
+          "Subject": "Number of Emergency phones (dedicated analog/ POTS) per building"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Total Peak Simultaneous Calls (minimum 3 month capture)"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "DID Number ranges"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Is a CLID being presented outbound?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Is there any CLID manipulation at site?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "What is/are the Area dial code/s?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "What is the national country dial code?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Who are the Telephony Services Providers?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "PBX make and models"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "EoSL Date for the PBX"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Current PBX Service Restoration SLA"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Number of Active PBX ports"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Number of Active IPT ports"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Number of Voice Mail Ports"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Number of Deskphones"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Number of Paging Systems"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Number of Cordless phones"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Number of Attendant/Receptionist Consoles"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Total number of Analog Devices connected to the PBX"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Total number of dedicated Analog Devices"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Telephony",
+          "Subject": "Number of Fax Machines connected to the PBX"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Emergency",
+          "Subject": "How are Emergency services dialed from the site?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Emergency",
+          "Subject": "What are the Emergency numbers and who do they connect to?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Emergency",
+          "Subject": "How many dedicated emergency phones are there on site?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Emergency",
+          "Subject": "How many dedicated emergency phones are connected to the PBX?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Procurement",
+          "Subject": "On average what is the WAN link upgrade lead time?"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Hunt Groups",
+          "Subject": "Number of Hunt Groups"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Hunt Groups",
+          "Subject": "Hunt Group Details (expand as necessary or attach extract)"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Connectivity",
+          "Subject": "Primary PSTN Connection types"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Connectivity",
+          "Subject": "Total number of Trunk Ports"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Connectivity",
+          "Subject": "Backup PSTN Connection types"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Connectivity",
+          "Subject": "Total number of Trunk Ports"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Connectivity",
+          "Subject": "Total number of Analogue Trunk Ports"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Connectivity",
+          "Subject": "Please describe any voice gateways (expand as necessary of attached extract)"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Connectivity",
+          "Subject": "Digital Circuits (ALL PRI/ISDN/SIP/QSIG including those used for non-voice such as ISDN circuits for Video Conferencing) (expand as necessary of attached extract)"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Connectivity",
+          "Subject": "Analog Circuits (e.g. POTS lines) (expand as necessary of attached extract)"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Other",
+          "Subject": "Please attach an export of the PBX / IPT configuration data including all phone number mappings for site users and Non-User mappings e.g. Alarms, Lifts, etc. that are not on dedicated POTS lines"
+        },
+        {
+          "Title": "Telephony",
+          "Area": "Other",
+          "Subject": "Please attach the voice design diagrams for the site, including all circuits, telephony infrastructure and DID ranges"
+        },
+        {
+          "Title": "User Information",
+          "Area": "",
+          "Subject": ""
+        }
+      ]
+    },
+    {
+      "listName": "Network",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Area' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Area' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Site'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Answer' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Answer' StaticName='Site' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Organization Overview",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Tenant Name' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Tenant_x0020_Name' StaticName='Tenant_x0020_Name' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Tenant ID' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Tenant_x0020_ID' StaticName='Tenant_x0020_ID' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Deployed Region' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Deployed_x0020_Region' StaticName='Deployed_x0020_Region' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Status' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Status' StaticName='Status' Viewable='TRUE' />",
+        "<Field Type='Number' DisplayName='CompletionProgress' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='CompletionProgress' StaticName='CompletionProgress' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Reception",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 1' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_1' StaticName='Receptionist_x0020_1'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 2' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_2' StaticName='Receptionist_x0020_2' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 3' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_3' StaticName='Receptionist_x0020_3' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 4' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_4' StaticName='Receptionist_x0020_4' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 5' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_5' StaticName='Receptionist_x0020_5' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 6' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_6' StaticName='Receptionist_x0020_6' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 7' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_7' StaticName='Receptionist_x0020_7' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 8' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_8' StaticName='Receptionist_x0020_8' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 9' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_9' StaticName='Receptionist_x0020_9' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Receptionist 10' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Receptionist_x0020_10' StaticName='Receptionist_x0020_10' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Site Overview",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Status' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Status' StaticName='Status' Viewable='TRUE' />",
+        "<Field Type='Number' DisplayName='CompletionProgress' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='CompletionProgress' StaticName='CompletionProgress' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Site Overview Assessment",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Answer' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Answer' StaticName='Answer'  Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Site Services",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 1' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_1' StaticName='Site_x0020_Code_x0020_1'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 2' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_2' StaticName='Site_x0020_Code_x0020_2' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 3' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_3' StaticName='Site_x0020_Code_x0020_3' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 4' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_4' StaticName='Site_x0020_Code_x0020_4' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 5' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_5' StaticName='Site_x0020_Code_x0020_5' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 6' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_6' StaticName='Site_x0020_Code_x0020_6' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 7' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_7' StaticName='Site_x0020_Code_x0020_7' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 8' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_8' StaticName='Site_x0020_Code_x0020_8' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 9' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_9' StaticName='Site_x0020_Code_x0020_9' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 10' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_10' StaticName='Site_x0020_Code_x0020_10' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 11' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_11' StaticName='Site_x0020_Code_x0020_11' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 12' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_12' StaticName='Site_x0020_Code_x0020_12' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 13' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_13' StaticName='Site_x0020_Code_x0020_13' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 14' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_14' StaticName='Site_x0020_Code_x0020_14' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 15' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_15' StaticName='Site_x0020_Code_x0020_15' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 16' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_16' StaticName='Site_x0020_Code_x0020_16' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 17' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_17' StaticName='Site_x0020_Code_x0020_17' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 18' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_18' StaticName='Site_x0020_Code_x0020_18' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 19' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_19' StaticName='Site_x0020_Code_x0020_19' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Site Code 20' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site_x0020_Code_x0020_20' StaticName='Site_x0020_Code_x0020_20' Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Telephony",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='TRUE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Area' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Area' StaticName='Area' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Subject' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Subject' StaticName='Subject'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Answer' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Answer' StaticName='Answer'  Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "User Information",
+      "listTemplate": "100",
+      "fields": [
+        "<Field Type='Text' DisplayName='Site' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Site' StaticName='Site' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Details TBC' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Details_x0020_TBC' StaticName='Details_x0020_TBC' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='UPN' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='UPN' StaticName='UPN'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='First Name' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='First_x0020_Name' StaticName='First_x0020_Name'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Last Name' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Last_x0020_Name' StaticName='Last_x0020_Name'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Email Address' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Email_x0020_Address' StaticName='Email_x0020_Address'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Existing Desk Phone Number' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Existing_x0020_Desk_x0020_Phone_' StaticName='Existing_x0020_Desk_x0020_Phone_'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Mobile Number' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Mobile_x0020_Number' StaticName='Mobile_x0020_Number'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Personal Voicemail Requirement' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Personal_x0020_Voicemail_x0020_R' StaticName='Personal_x0020_Voicemail_x0020_R'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Business Unit' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Business_x0020_Unit' StaticName='Business_x0020_Unit' Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='UPN of delegates' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='UPN_x0020_of_x0020_delegates' StaticName='UPN_x0020_of_x0020_delegates'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Current Telecom Device' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Current_x0020_Telecom_x0020_Devi' StaticName='Current_x0020_Telecom_x0020_Devi'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Building' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Building' StaticName='Building'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Floor Number' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Floor_x0020_Number' StaticName='Floor_x0020_Number'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Desk Number' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Desk_x0020_Number' StaticName='Desk_x0020_Number'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Hunt/ Response Group Membership' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Hunt_x002f__x0020_Response_x0020' StaticName='Hunt_x002f__x0020_Response_x0020'  Viewable='TRUE' />",
+        "<Field Type='Text' DisplayName='Special Features and Health Requirements' Required='FALSE' EnforceUniqueValues='FALSE' Indexed='FALSE' MaxLength='255' Name='Special_x0020_Features_x0020__x0' StaticName='Special_x0020_Features_x0020__x0'  Viewable='TRUE' />"
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Organization"
+        }
+      ]
+    },
+    {
+      "listName": "Deployed Region",
+      "listTemplate": "100",
+      "fields": [],
+      "masterData": [
+        {
+          "Title": "North America"
+        },
+        {
+          "Title": "Europe"
+        },
+        {
+          "Title": "Latin America"
+        },
+        {
+          "Title": "Australia"
+        },
+        {
+          "Title": "Africa"
+        },
+        {
+          "Title": "Asia"
+        }
+      ],
+      "renameColumns": [
+        {
+          "key": "Title",
+          "value": "Region"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+.custom-search-box {
+    margin: 1.5% 1.5% 1.5% 2.5%;
+    display: inline-flex;
+    width: 100%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.refreshIcon {
+    margin-top: 5%;
+    padding-left: 90%;
+}
+
+.grid-panel {
+    background: white;
+    width: 95% !important;
+    margin: 0% 2.5% 2.5% 2.5%;
+    padding: 0% !important;
+    min-height: 500px !important;
+}
+
+.ms-SearchBox-icon {
+    top: 40%;
+    margin-left: 5px;
+    color: black;
+}
+
+.container {
+    background: #F0F2F7 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 1px solid #F0F2F7 !important;
+    max-width: 1366px;
+    padding: 0px !important;
+}
+
+.header {
+    background: #243a5e;
+    color: white;
+    height: 70px;
+}
+
+.sub-header {
+    background: white;
+    height: 80px;
+}
+
+.form-sub-container {
+    background-color: white;
+    padding-top: 10px;
+}
+
+.form-container {
+    margin: 6% 9%;
+    background: white;
+
+    .asterisk {
+        color: #a4262c;
+    }
+
+    .newOrgInfoTooltip {
+        padding-bottom: 2px;
+
+        .newOrgInfoIcon {
+            width: auto;
+            height: 16px;
+            cursor: pointer;
+        }
+    }
+
+    .ms-Dropdown-title,
+    .ms-TextField-fieldGroup {
+        height: 41px;
+        border: 1px solid #707070;
+    }
+
+    .ms-TextField-field,
+    .ms-Dropdown-title {
+        font: normal normal normal 16px/35px Segoe UI;
+    }
+
+    .ms-Label {
+        text-align: left;
+        font: normal normal normal 18px/24px Segoe UI;
+        color: #666;
+    }
+
+    .date-label {
+        font: normal normal normal 18px/24px Segoe UI;
+        color: #000000;
+        margin-left: 0;
+    }
+
+    .saveBtn {
+        background-color: #1e90ff;
+        height: 38px;
+    }
+
+    .cancelBtn {
+        height: 38px;
+    }
+}
+
+.loader {
+    border-radius: 50%;
+    border: 6px solid #dde2eb;
+    border-top: 6px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s infinite;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .custom-status-icon {
+        display: none;
+    }
+
+}
